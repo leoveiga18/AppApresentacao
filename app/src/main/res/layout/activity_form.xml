@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="      App Apresentação"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/btnReturn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-46dp"
+        android:background="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Formulário de Contato"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:text="Para:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textEmailAddress"
+        android:text="leonardo.batista@outlook.com"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:text="Mensagem:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start|top"></EditText>
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorPrimary"
+        android:text="Enviar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="App Apresentação"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:padding="8dp"
+            android:src="@drawable/image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leonardo da Veiga Batista"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serafina Corrêa/RS"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewAgeOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20 anos, Estudante"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Olá, eu me chamo Leonardo!"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Atualmente, estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas, mergulhando fundo no universo da programação e do desenvolvimento de software."
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnContato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contate-me"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
